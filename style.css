@@ -1,0 +1,405 @@
+/* Styles généraux */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #f4f4f4;
+  color: #5c5b59;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #8d6246; /* Couleur marron pour les titres */
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Header */
+.main-header {
+  background-color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo-container {
+  display: inline-block;
+}
+
+.header-logo {
+  height: 40px;
+  max-width: 100%;
+}
+
+.language-select {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+/* Navigation principale */
+.main-nav {
+  background-color: #ff9a56;
+  padding: 10px 0;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-menu li {
+  margin-right: 20px;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.filter-options {
+  color: #fff;
+}
+
+.filter-options span {
+  margin-right: 10px;
+}
+
+.filter-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+}
+
+/* Sections communes */
+section {
+  margin-bottom: 20px;
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  color: #8d6246;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+/* Section Vivre l'expérience */
+.experience-section {
+  background-color: #fff;
+}
+
+.experience-grid {
+  display: flex;
+  gap: 20px;
+  background-color: #8d6246;
+  padding: 20px;
+}
+
+.experience-card {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Témoignages */
+.testimonials-section {
+  background-color: #f4f4f4;
+}
+
+.testimonial-slider {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.testimonial-slide {
+  display: none;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-info {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  color: #ff9a56;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ff9a56;
+  font-size: 1.5rem;
+}
+
+.left-nav {
+  left: 10px;
+}
+
+.right-nav {
+  right: 10px;
+}
+
+.slider-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ff9a56;
+}
+
+/* Articles recommandés */
+.recommended-section {
+  background-color: #fff;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image-placeholder {
+  height: 120px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+/* Vidéos partagées */
+.shared-videos-section {
+  background-color: #f4f4f4;
+}
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.video-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.video-placeholder {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.play-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 154, 86, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Autres univers */
+.other-universes-section {
+  background-color: #fff;
+}
+
+.universe-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.universe-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.universe-image-placeholder {
+  height: 120px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact-section {
+  background-color: #f4f4f4;
+}
+
+.contact-form-placeholder {
+  height: 300px;
+  background-color: #fff;
+}
+
+/* Engagements */
+.engagements-section {
+  background-color: #fff;
+}
+
+.engagements-content {
+  height: 150px;
+  border: 1px solid #f0f0f0;
+}
+
+/* Réseaux sociaux */
+.social-media-section {
+  background-color: #ff9a56;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Boutons */
+.orange-btn {
+  display: inline-block;
+  background-color: #ff9a56;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.orange-btn:hover {
+  background-color: #e88a4a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav .container {
+    flex-direction: column;
+  }
+  
+  .main-menu {
+    margin-bottom: 10px;
+  }
+  
+  .experience-grid, 
+  .product-grid, 
+  .video-grid, 
+  .universe-grid {
+    flex-direction: column;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  
+  .slider-nav {
+    display: none;
+  }
+}
